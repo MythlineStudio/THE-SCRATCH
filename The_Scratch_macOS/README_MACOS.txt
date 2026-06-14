@@ -58,7 +58,7 @@ Terminal
 
 Open Terminal.
 
-Type:
+Run:
 
 ```bash
 python3 --version
@@ -66,11 +66,9 @@ python3 --version
 
 Press Enter.
 
-Success looks like:
+Success looks similar to:
 
-```text
 Python 3.14.0
-```
 
 Your version number may be different.
 
@@ -121,11 +119,8 @@ Memory
 Examples:
 
 8 GB
-
 16 GB
-
 24 GB
-
 32 GB
 
 ---
@@ -135,6 +130,7 @@ RECOMMENDED MODELS
 8 GB Memory
 
 Open Terminal and run:
+
 
 ```bash
 ollama pull llama3.2:1b
@@ -158,6 +154,24 @@ or
 ollama pull llama3.1:8b
 ```
 
+---
+
+24 GB+ Memory
+
+Recommended:
+
+```bash
+ollama pull qwen3:8b
+```
+
+or
+
+```bash
+ollama pull llama3.1:8b
+```
+
+or another model of your choice.
+
 These larger models generally provide better results.
 
 ---
@@ -174,16 +188,12 @@ ollama list
 
 Success looks similar to:
 
-```text
 NAME
 llama3.2:1b
-```
 
 or
 
-```text
 qwen3:8b
-```
 
 If you see a model listed, you are ready.
 
@@ -191,7 +201,7 @@ If you see a model listed, you are ready.
 
 STEP 4 — OPEN THE SCRATCH FOLDER
 
-Locate the folder you downloaded.
+Locate the folder you downloaded and extracted.
 
 Open:
 
@@ -211,45 +221,21 @@ resources
 
 IMPORTANT: APPLE SECURITY WARNING
 
-Because THE SCRATCH is distributed outside the Mac App Store, macOS may prevent it from launching the first time.
+THE SCRATCH is distributed outside the Mac App Store.
+
+Because of this, macOS may prevent it from launching the first time.
 
 This is normal.
 
-Nothing is wrong.
+Nothing is wrong with THE SCRATCH.
+
+You only need to complete the following steps once.
 
 ---
 
-METHOD 1 — TRY THE EASY WAY FIRST
-
-Right-click:
-
-run_the_scratch.command
-
-Choose:
-
-Open
-
-A warning may appear.
-
-Click:
-
-Open
-
-again.
-
-If THE SCRATCH launches successfully, you are done.
-
----
-
-METHOD 2 — REMOVE QUARANTINE (RECOMMENDED)
-
-If Method 1 does not work, use Terminal.
+STEP 5 — PREPARE THE SCRATCH FOR FIRST LAUNCH
 
 Open Terminal.
-
-Drag the THE_SCRATCH_macOS folder into the Terminal window.
-
-Press Backspace once to remove the folder name.
 
 Type:
 
@@ -259,7 +245,11 @@ cd
 
 followed by a space.
 
-Then drag the THE_SCRATCH_macOS folder into Terminal.
+Now drag the entire:
+
+THE_SCRATCH_macOS
+
+folder into the Terminal window.
 
 Example:
 
@@ -283,7 +273,7 @@ You will usually see NO OUTPUT.
 
 That is normal.
 
-No message means the command worked.
+No message usually means the command completed successfully.
 
 Next run:
 
@@ -299,19 +289,23 @@ You will usually see NO OUTPUT.
 
 That is normal.
 
-No message means success.
+No message usually means success.
+
+These commands only need to be run once.
 
 ---
 
-STEP 5 — LAUNCH THE SCRATCH
+STEP 6 — LAUNCH THE SCRATCH
 
-Double-click:
+While still in Terminal, run:
 
-run_the_scratch.command
+```bash
+./run_the_scratch.command
+```
 
-A Terminal window may briefly appear.
+Press Enter.
 
-THE SCRATCH should then open.
+THE SCRATCH should launch.
 
 ---
 
@@ -327,7 +321,7 @@ near the model controls.
 
 You should also see an available model in the model selector.
 
-Example:
+Examples:
 
 llama3.2:1b
 
@@ -337,7 +331,9 @@ qwen3:8b
 
 Type a short test note.
 
-Click RUN.
+Click:
+
+RUN
 
 If output is generated, everything is working correctly.
 
@@ -365,15 +361,24 @@ If not, install a model.
 
 ---
 
-Double-clicking the launcher does nothing
+THE SCRATCH does not launch
 
-Try:
+Return to the THE_SCRATCH_macOS folder in Terminal and run:
 
-Right-click → Open
+```bash
+xattr -dr com.apple.quarantine .
+chmod +x run_the_scratch.command
+```
 
-If that fails:
+Then launch again using:
 
-Run the quarantine removal steps above.
+```bash
+./run_the_scratch.command
+```
+
+If a Terminal window remains open, leave it open while using THE SCRATCH.
+
+Closing the Terminal window may close THE SCRATCH.
 
 ---
 
@@ -393,8 +398,9 @@ THE SCRATCH opens but generates no output
 
 Usually:
 
-* No model installed
-* Ollama not running
+• No model installed
+
+• Ollama not running
 
 Run:
 
