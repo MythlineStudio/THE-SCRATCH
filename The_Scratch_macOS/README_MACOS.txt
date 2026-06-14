@@ -58,11 +58,9 @@ Terminal
 
 Open Terminal.
 
-Run:
+Run/Type:
 
-```bash
 python3 --version
-```
 
 Press Enter.
 
@@ -129,12 +127,9 @@ RECOMMENDED MODELS
 
 8 GB Memory
 
-Open Terminal and run:
+Open Terminal Type and run:
 
-
-```bash
 ollama pull llama3.2:1b
-```
 
 Wait for the download to finish.
 
@@ -142,17 +137,17 @@ Wait for the download to finish.
 
 16 GB Memory
 
-Recommended:
+Recommended/Type in Terminal:
 
-```bash
+
 ollama pull qwen3:8b
-```
+
 
 or
 
-```bash
+
 ollama pull llama3.1:8b
-```
+
 
 ---
 
@@ -160,15 +155,11 @@ ollama pull llama3.1:8b
 
 Recommended:
 
-```bash
 ollama pull qwen3:8b
-```
 
 or
 
-```bash
 ollama pull llama3.1:8b
-```
 
 or another model of your choice.
 
@@ -180,11 +171,11 @@ VERIFY THE MODEL IS INSTALLED
 
 Open Terminal.
 
-Run:
+Run/Type:
 
-```bash
 ollama list
-```
+
+Press Enter
 
 Success looks similar to:
 
@@ -239,9 +230,7 @@ Open Terminal.
 
 Type:
 
-```bash
 cd
-```
 
 followed by a space.
 
@@ -253,17 +242,13 @@ folder into the Terminal window.
 
 Example:
 
-```bash
 cd /Users/YourName/Downloads/THE_SCRATCH_macOS
-```
 
 Press Enter.
 
 Now run:
 
-```bash
 xattr -dr com.apple.quarantine .
-```
 
 Press Enter.
 
@@ -277,9 +262,7 @@ No message usually means the command completed successfully.
 
 Next run:
 
-```bash
 chmod +x run_the_scratch.command
-```
 
 Press Enter.
 
@@ -299,9 +282,7 @@ STEP 6 — LAUNCH THE SCRATCH
 
 While still in Terminal, run:
 
-```bash
 ./run_the_scratch.command
-```
 
 Press Enter.
 
@@ -351,9 +332,7 @@ Check:
 2. Is Ollama running?
 3. Does:
 
-```bash
 ollama list
-```
 
 show a model?
 
@@ -365,16 +344,12 @@ THE SCRATCH does not launch
 
 Return to the THE_SCRATCH_macOS folder in Terminal and run:
 
-```bash
 xattr -dr com.apple.quarantine .
 chmod +x run_the_scratch.command
-```
 
 Then launch again using:
 
-```bash
 ./run_the_scratch.command
-```
 
 If a Terminal window remains open, leave it open while using THE SCRATCH.
 
@@ -404,9 +379,7 @@ Usually:
 
 Run:
 
-```bash
 ollama list
-```
 
 If nothing appears, install a model.
 
@@ -416,9 +389,7 @@ THE SCRATCH feels slow
 
 Try using:
 
-```bash
 ollama pull llama3.2:1b
-```
 
 Smaller models generally run faster.
 
